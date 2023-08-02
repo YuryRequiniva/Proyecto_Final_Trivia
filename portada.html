@@ -18,9 +18,26 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            
-         
             background: url(imagenes/logo.png) no-repeat center center/cover;
+        }
+        .conteiner{
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .enlaces{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          max-width: 450px;
+          max-height: 65px;
+          margin:100px;
+          padding: 15px;
+          gap: 5px;
+          color: white;
         }
         .title{
           font-size: 100px;
@@ -71,34 +88,43 @@
         .text-3:hover {
           background-color:  rgba(108, 8, 87, 0.745);
         }
-        .container{
-          display:flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .enlaces{
+        .Registro-one{
           display: flex;
-          flex-direction: column;
           justify-content: center;
           align-items: center;
           text-align: center;
-          max-width: 450px;
-          max-height: 65px;
-          margin:100px;
-          padding: 15px;
-          gap: 5px;
-          color: white;
-      
-        }
-        .Registro{
-          display: flex;
-          justify-content: center;
-          align-items: flex-end;
-          text-align: center;
-          max-width: 200px;
+          max-width: 300px;
           max-height: 70px;
-          margin:150px;
+          margin:20px;
           padding: 15px;
+        }
+        .one{
+          border-radius: 5px;
+          border: none;
+        }
+        .Registro-two{
+          display: flex;
+          
+          max-width: 80px;
+          max-height: 70px;
+          margin:20px;
+          padding: 15px;
+        }
+        .two{
+          background-color:rgba(40, 40, 199, 0.666);
+          color: white;
+          border-radius: 5px;
+          border: none;
+        }
+        .two:hover{
+          background:  rgba(108, 8, 87, 0.745);;
+        }
+        .boton{
+          margin:20px;
+          cursor: pointer;
+          color: red;
+          border: none;
+          border-radius: 5px;
         }
         
      
@@ -116,8 +142,8 @@
         </section>
       <section class="Registro">
           
-            <input type="text" name="nombre" id="nombrees" placeholder="Ingrese su Nombre" size="35">
-            <input type="submit"id="boton" onclick="captura()" value="Enviar">
+            <input class="one" type="text" name="nombre" id="nombrees" placeholder="Ingrese su Nombre" size="35">
+            <input class="two" type="submit"id="boton" onclick="captura()" value="Enviar">
          
          
           <section class="play">
