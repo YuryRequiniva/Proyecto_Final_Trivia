@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  font-family: "Noto Serif", serif, "Oleo Script", cursive, "Roboto", sans-serif,
+    "Space Mono", monospace;
+  color: white;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url(imagenes/fondo.jpg) no-repeat center center/cover;
+}
+a:link {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 35px;
+  background: rgba(108, 8, 87, 0.745);
+  text-decoration: none;
+  margin: 35px 40px;
+  box-shadow: rgba(212, 84, 185, 0.745);
+  border-radius: 20px;
+  cursor: pointer;
+}
+a:hover {
+  background-color: rgba(40, 40, 199, 0.666);
+}
+.text {
+  background-color: rgba(217, 43, 150, 0.666);
+  border-radius: 20px;
+  color: white;
+}
+.text-2 {
+  background-color: rgba(40, 40, 199, 0.666);
+  border-radius: 20px;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+section {
+  border: 2px solid #5624d0;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  color: white;
+  background-color: rgba(108, 8, 87, 0.745);
+}
+label {
+  display: block;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px dashed #ccc;
+  margin-bottom: 3px;
+}
+label:hover {
+  background: #cec0fc;
+}
+.contenedor-botones {
+  width: 80px;
+  height: 80px;
+  font-size: 50px;
+  margin: 10px;
+  padding: 10px;
+}
+.boton .bi-play-fill {
+  background-color: #08e008;
+}
+.boton .bi-arrow-counterclockwise {
+  background-color: red;
+}
+button {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  color: gray;
+}
+button:hover {
+  background: rgba(40, 40, 199, 0.666);
+}
+h2 {
+  text-align: center;
+}
+.contenedor-botones {
+  margin: 6px;
+}
+#resultado {
+  font-size: 18px;
+}

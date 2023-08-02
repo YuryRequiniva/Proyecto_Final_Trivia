@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="imagenes/Questions.png" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <lin<link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,300&family=Oleo+Script:wght@400;700&family=Roboto:wght@400;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Trivia</title>
+  </head>
+  <body>
+    <header>
+      <a href="portada.html" target="_blank">Trivia</a> 
+        
+        <p class="text-2">Juego de Capitales</p>
+        <div class="container">
+          <section id="uno">
+            <h3>1-¿Cuál es la capital de Italia?</h3>
+            <label>
+              <input type="radio" value="1" name="uno" onclick="respuesta(0,this)"> Turín
+            </label> 
+            <label>
+              <input type="radio" value="2" name="uno" onclick="respuesta(0,this)"> Napolés
+            </label> 
+            <label>
+              <input type="radio" value="3" name="uno" onclick="respuesta(0,this)"> Roma
+            </label> 
+          </section>
+          <section id="dos">
+            <h3>2-¿Cuál es la capital de Noruega?</h3>
+            <label>
+              <input type="radio" value="1" name="dos" onclick="respuesta(1,this)"> Oslo
+            </label> 
+            <label>
+              <input type="radio" value="2" name="dos" onclick="respuesta(1,this)"> Bucarest
+            </label> 
+            <label>
+              <input type="radio" value="3" name="dos" onclick="respuesta(1,this)"> Madrid
+            </label> 
+          </section>
+          <section id="tres">
+            <h3>3-¿Cuál es la capital de Perú?</h3>
+            <label>
+              <input type="radio" value="1" name="tres" onclick="respuesta(2,this)"> La Paz
+            </label> 
+            <label>
+              <input type="radio" value="2" name="tres" onclick="respuesta(2,this)"> Ciudad del Perú
+            </label> 
+            <label>
+              <input type="radio" value="3" name="tres" onclick="respuesta(2,this)"> Lima
+            </label>
+            </section> 
+            <section id="cuatro">
+              <h3>4-¿Cuál es la capital de Suecia?</h3>
+              <label>
+                <input type="radio" value="1" name="cuatro" onclick="respuesta(3,this)"> Gotemburgo
+              </label> 
+              <label>
+                <input type="radio" value="2" name="cuatro" onclick="respuesta(3,this)"> Estocolmo
+              </label> 
+              <label>
+                <input type="radio" value="3" name="cuatro" onclick="respuesta(3,this)"> Lund
+              </label> 
+          </section>
+          <section id="cinco">
+            <h3>5-¿Cuál es la capital de Canadá?</h3>
+            <label>
+              <input type="radio" value="1" name="cinco" onclick="respuesta(4,this)"> Candberra
+            </label> 
+            <label>
+              <input type="radio" value="2" name="cinco" onclick="respuesta(4,this)"> Toronto
+            </label> 
+             <label>
+              <input type="radio" value="3" name="cinco" onclick="respuesta(4,this)"> Ottawa
+            </label> 
+        </section>
+       
+          <button onclick="corregir()">Comprobar</button>
+          <div class="contenedor-botones">
+          <button id="btn-iniciar" class="boton"><i class="bi bi-play-fill"></i></button>
+          <button id="btn-iniciar" class="boton"><i class="bi bi-arrow-counterclockwise"></i></button>
+        </div>
+        <h2>Cantidades acertadas: <span id="resultado"></span> </h2>
+        <script src="app.js"></script>
+   
+ 
+  </body>
+</html>

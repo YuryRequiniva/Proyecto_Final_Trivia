@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="imagenes/Questions.png" />
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,300&family=Oleo+Script:wght@400;700&family=Roboto:wght@400;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Trivia</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+         
+            background: url(imagenes/logo.png) no-repeat center center/cover;
+        }
+        .title{
+          font-size: 100px;
+          color: white;
+          background-color:  rgba(108, 8, 87, 0.745);
+          border-radius: 20px;
+          cursor: pointer;
+        }
+        .title:hover{
+          background: rgba(40, 40, 199, 0.666);
+        }
+        a:link{
+             cursor: pointer;
+             text-decoration: none;
+             background-color:  rgba(108, 8, 87, 0.745);
+             border-radius: 20px;
+             font-size: 28px;
+            }
+        a:hover{
+          background: rgba(40, 40, 199, 0.666);
+        }
+        .text{
+          font-size: 40px;
+          color: white;
+          background-color:  rgba(108, 8, 87, 0.745);
+          border-radius: 20px;
+          cursor: pointer;
+        }
+        .text:hover{
+          background: rgba(40, 40, 199, 0.666);
+        }
+        .text-2{
+          font-size: 24px;
+          color: white;
+          background:  rgba(40, 40, 199, 0.666);
+          cursor: pointer;
+        }
+        .text-2:hover {
+          background-color:  rgba(108, 8, 87, 0.745);
+        }
+        .text-3{
+          font-size: 24px;
+          color: white;
+          background: rgba(40, 40, 199, 0.666);
+          border-radius: 20px;
+          cursor: pointer;
+        }
+        .text-3:hover {
+          background-color:  rgba(108, 8, 87, 0.745);
+        }
+        .container{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .enlaces{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          max-width: 450px;
+          max-height: 65px;
+          margin:100px;
+          padding: 15px;
+          gap: 5px;
+          color: white;
+      
+        }
+        .Registro{
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          text-align: center;
+          max-width: 200px;
+          max-height: 70px;
+          margin:150px;
+          padding: 15px;
+        }
+        
+     
+      </style>
+  </head>
+  <body>
+    
+    <header>
+      <section class="conteiner">
+        <section class="enlaces">
+          <a href="portada2.html" target="_blank" class="title">Trivia</a> 
+          <a href="portada2.html" target="_blank" class="text">Pon a prueba tú memoria</a>
+          <a href="index.html" target="_blank"class="text-2">Juego de Capitales</p>
+          <a href="index2.html" target="_blank"class="text-3">Cuánto sabes de Mundiales</p>
+        </section>
+      <section class="Registro">
+          
+            <input type="text" name="nombre" id="nombrees" placeholder="Ingrese su Nombre" size="35">
+            <input type="submit"id="boton" onclick="captura()" value="Enviar">
+         
+         
+          <section class="play">
+  
+            <button id="btn-iniciar" class="boton"><i class="bi bi-play-fill"></i></button>
+          
+          </section>
+      </section>
+        </header>
+        <script src="app.js"></script>
+  </body>
+</html>

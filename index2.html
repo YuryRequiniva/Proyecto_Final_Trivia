@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="imagenes/Questions.png" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <lin<link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,300&family=Oleo+Script:wght@400;700&family=Roboto:wght@400;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Trivia</title>
+  </head>
+  <body>
+    <header>
+      <a href="portada.html" target="_blank">Trivia</a> 
+        
+        <p class="text-2">Cuánto sabes de Mundiales</p>
+        <div class="container">
+          <section id="uno">
+            <h3>1-¿Cuál es el jugador latino que ha anotado más goles en la historia de los Mundiales?</h3>
+            <label>
+              <input type="radio" value="1" name="uno" onclick="respuesta(0,this)"> Ronaldo Nazario
+            </label> 
+            <label>
+              <input type="radio" value="2" name="uno" onclick="respuesta(0,this)"> Gabriel Batistuta
+            </label> 
+            <label>
+              <input type="radio" value="3" name="uno" onclick="respuesta(0,this)"> Diego Maradona
+            </label> 
+          </section>
+          <section id="dos">
+            <h3>2-¿Cómo se llamó la mascota de la Copa Mundial de 1982 en España?</h3>
+            <label>
+              <input type="radio" value="1" name="dos" onclick="respuesta(1,this)"> Fuleco
+            </label> 
+            <label>
+              <input type="radio" value="2" name="dos" onclick="respuesta(1,this)"> Naranjito
+            </label> 
+            <label>
+              <input type="radio" value="3" name="dos" onclick="respuesta(1,this)"> Juanito
+            </label> 
+          </section>
+          <section id="tres">
+            <h3>3-¿El goleador del primer Mundial de fútbol fué?</h3>
+            <label>
+              <input type="radio" value="1" name="tres" onclick="respuesta(2,this)"> Obdulio Barela
+            </label> 
+            <label>
+              <input type="radio" value="2" name="tres" onclick="respuesta(2,this)"> Guillermo Stabile
+            </label> 
+            <label>
+              <input type="radio" value="3" name="tres" onclick="respuesta(2,this)"> Bigode Alcides
+            </label>
+            </section> 
+            <section id="cuatro">
+              <h3>4-¿Cuál es jugador latino que ha tenido más participaciones en el torneo?</h3>
+              <label>
+                <input type="radio" value="1" name="cuatro" onclick="respuesta(3,this)"> Hugo Sánchez
+              </label> 
+              <label>
+                <input type="radio" value="2" name="cuatro" onclick="respuesta(3,this)"> Pelé
+              </label> 
+              <label>
+                <input type="radio" value="3" name="cuatro" onclick="respuesta(3,this)"> Antonio Carbajal
+              </label> 
+          </section>
+          
+            
+        <button onclick="corregir()">Comprobar</button>
+        <h2>Cantidades acertadas: <span id="resultado"></span> </h2>
+        <script src="app2.js"></script>
+   
+ 
+  </body>
+</html>
