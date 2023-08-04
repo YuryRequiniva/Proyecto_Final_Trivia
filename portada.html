@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="imagenes/Questions.png" />
-  
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,11 +14,12 @@
     <title>Trivia</title>
     <style>
         body {
+            height: 100vgh;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: url(imagenes/logo.png) no-repeat center center/cover;
+            background: url(imagenes/logo.png) repeat center center/cover;
         }
         .conteiner{
           display:flex;
@@ -94,14 +95,16 @@
         .Registro{
           display: flex;
           justify-content: center;
-          margin: 40px 30px;
+          margin: 90px 30px 5px 30px;
+
+          gap: 6px;
         }
         .Registro-one{
           display: flex;
           justify-content: center;
           align-items: center;
           text-align: center;
-          max-width: 300px;
+          max-width: 250px;
           max-height: 70px;
           margin:20px;
           padding: 15px;
@@ -109,6 +112,7 @@
         .one{
           border-radius: 5px;
           border: none;
+          text-decoration: none;
         }
         .Registro-two{
           display: flex;
@@ -138,26 +142,35 @@
           border: none;
           border-radius: 5px;
         }
-        
+        .title,.text,.text-2,.text-3,.one, .two,.boton{
+          display:
+        }
+        h2{
+          display:none;
+        }
      
     </style>
   </head>
   <body>
     <main>
-      <section class="conteiner">
-        <section class="enlaces">
-          <a href="portada2.html" target="_blank" class="title">Trivia</a> 
-          <a href="portada2.html" target="_blank" class="text">Pon a prueba tú memoria</a>
-          <a href="index.html" target="_blank"class="text-2">Juego de Capitales</p>
-          <a href="index2.html" target="_blank"class="text-3">Cuánto sabes de Mundiales</p>
-        </section>
-        <section class="Registro">
+      <div class="conteiner">
+        <h2 id="Bienvenido"></h2>
+        <div class="enlaces">
+          <a  href="portada2.html" target="_blank" id="one" class="title">Trivia</a> 
+          <a href="portada2.html" target="_blank" id="two" class="text">Pon a prueba tú memoria</a>
+          <a href="index.html" target="_blank" id="three" class="text-2">Juego de Capitales</a>
+          <a href="index2.html" target="_blank" id="four" class="text-3">Cuánto sabes de Mundiales</a>
+        </div>
+        <div class="Registro">
+          <form>
         <input class="one" type="text" name="nombre" id="nombrees" placeholder="Ingrese su Nombre" size="35">
-        <input class="two" type="submit"id="boton" onclick="captura()" value="Enviar">
-        <section class="play">
+        <input class="two" type="button"id="boton" onclick="captura()" value="Enviar">
+        <div class="play">
+         
           <button id="btn-iniciar" class="boton"><i class="bi bi-play-fill"></i></button>
-        </section>
-      </section>
+        </form>
+        </div>
+      </div>
       <script src="app.js"></script>
     </main>
   </body>

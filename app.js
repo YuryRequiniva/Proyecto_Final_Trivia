@@ -1,18 +1,17 @@
 //Función que captura datos desde el formulario
 
 function captura() {
-  var nombrees = document.getElementById("nombre").value;
+  var nombrees = document.getElementById("nombrees").value;
+  console.log(nombrees);
   if (nombrees == "") {
     alert("El Nombre es obligatorio");
     document.getElementById("nombrees").focus();
+  } else {
+    document.getElementById("nombrees").value = "";
+    document.getElementById("nombrees").focus();
   }
 }
-alert("nombrees");
-
-//Ocultando al hacer click en Enviar
-hideButton.addEventListener ("click()" =>{
-  let hideInfo =document.getElementById
-})
+//Actualizar el color de texto
 
 //Arreglo que contiene las respuestas correctas
 
@@ -58,3 +57,19 @@ function corregir() {
   }
   document.getElementById("resultado").innerHTML = cantidad_correctas;
 }
+
+//Crear y agregar contenedores de iconos
+
+//opcion_elegida.appendChild();
+let iconos = document.createElement("div");
+iconos.classList.add("iconos");
+//opcion_elegida.appendChild("iconos");
+
+//Iconos
+let correcta = document.createElement("i");
+correcta.classList.add("bi,", "bi-check-circle-fill", "check");
+
+//let incorrecta = document.reateElement("i");
+//incorrecta.classList.add("bi", "bi-x-circle-fill", "incorrect");
+
+//iconos.append(correcta, incorrecta);

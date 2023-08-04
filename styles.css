@@ -61,16 +61,11 @@ label:hover {
 }
 .contenedor-botones {
   width: 80px;
-  height: 80px;
+  height: 50px;
   font-size: 50px;
   margin: 10px;
   padding: 10px;
-}
-.boton .bi-play-fill {
-  background-color: #08e008;
-}
-.boton .bi-arrow-counterclockwise {
-  background-color: red;
+  gap: 12px;
 }
 button {
   width: 80%;
@@ -89,9 +84,7 @@ button:hover {
 h2 {
   text-align: center;
 }
-.contenedor-botones {
-  margin: 6px;
-}
+
 #resultado {
   font-size: 18px;
 }
